@@ -27,3 +27,7 @@ release-*/
 *.error.txt
 xcs说明书.docx
 卡牌图鉴.docx
+SHA256SUMS-*.txt
+11.01问题.txt
+美术素材需求.md
+docs/音频素材制作清单.md
