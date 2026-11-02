@@ -1,0 +1,6 @@
+<resources>
+ <string name="app_name">リトルレジェンド · ホスト</string>
+ <string name="host_channel">LAN ゲームサーバー</string>
+ <string name="host_running">リトルレジェンドのサーバー稼働中</string>
+ <string name="host_note">接続を維持してください。停止は起動パネルから行えます</string>
+</resources>

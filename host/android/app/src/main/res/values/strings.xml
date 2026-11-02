@@ -1,0 +1,6 @@
+<resources>
+ <string name="app_name">小传说 · 房主</string>
+ <string name="host_channel">局域网游戏服务</string>
+ <string name="host_running">小传说服务运行中</string>
+ <string name="host_note">保持网络连接；回到启动面板停止服务</string>
+</resources>

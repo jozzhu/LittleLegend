@@ -1,0 +1,57 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+/* User-supplied artwork; rules, seats, and saved layouts remain unchanged. */
+:root{--line:#d4c7a529;--gold:#e5c582;background:#191c20;color:#f3f0e9}
+body{background:#191c20;color:#f3f0e9}
+.appbar{background:#171c20;border-bottom-color:#c7ae7044}
+.wordmark,.table-center>strong{color:#f4e4bc;text-shadow:0 2px 6px #0008}
+.kicker,.wordmark span{letter-spacing:0}
+button,input,select{border-color:#c5c4ba40}input,select{background:#171d21}
+button.primary{background:#e5c582;border-color:#e5c582;color:#202227}
+.muted{color:#c0c5c5}
+.auth-screen{background:#25232a url('/assets/battlefield_2560x1440.png') center/cover no-repeat;gap:3rem;padding:2rem max(2rem,7vw);overflow:auto}
+.auth-screen form{justify-self:end;max-width:390px;background:#171d23f5;border:1px solid #e4d4b05c;border-top:3px solid #e5c582;padding:1.8rem;box-shadow:0 16px 45px #0005}
+.auth-screen h1{font-size:2.6rem;margin:.2rem 0}
+.auth-visual{min-height:480px;align-self:stretch;display:flex;align-items:end}
+.auth-visual img{display:none}
+.auth-visual>span{position:static;font-size:1.65rem;line-height:1.8;background:#191e25e8;border-left:3px solid #dec082;padding:.8rem 1.2rem;color:#fff1cf;margin-bottom:1rem}
+.auth-tabs button{background:none}
+.account-hub{max-width:1200px;padding-top:1.5rem}
+.account-summary{background:#20262c;padding:1rem;border:1px solid var(--line)}
+.account-shelves h2{font-size:1.15rem}.shelf-row{background:#242a30;color:#f1eee7}
+.account-hub+.entry-screen .entry-form{max-width:620px}
+#room{background:#24252a url('/assets/battlefield_2560x1440.png') center top/100% auto no-repeat;padding-top:.1px;min-height:calc(100vh - 4.2rem)}
+.room-toolbar{background:#171d24f0;border:1px solid #d9c49440;padding:.8rem 1rem;margin-bottom:1rem}
+.module{background:#20272bf5;border-color:#d9cfb233;box-shadow:0 4px 16px #0002}
+.table-module{background:#20252be6;padding:1rem}
+.module-head{padding-bottom:.7rem;border-bottom:1px solid var(--line)}
+.module-head h2{color:#f4e7c8}.module-head>span{color:#c3c9cb}
+.felt{background:#3a2b26 url('/assets/wood_table_texture.png') center/520px 520px repeat;border:1px solid #dbc69d80;border-radius:6px;box-shadow:inset 0 0 0 4px #171b2090,inset 0 0 30px #0007;padding:1.6rem 1rem;min-height:245px;gap:1.2rem}
+.table-center{background:#1b2026ed;border:1px solid #d6c4a650;border-radius:4px;padding:.8rem 1rem;min-width:150px;max-width:55%;gap:.6rem}
+.table-center>strong{font-size:1.5rem}.table-center>span{color:#d4d5cc}
+.draw-deck{position:relative;isolation:isolate;flex:0 0 104px;width:104px;min-height:0;aspect-ratio:1746/2401;border:1px solid #ead6ac99;border-radius:5px;padding:0;gap:0;overflow:visible;box-shadow:3px 3px 0 #171b22,4px 4px 0 #b9a278,6px 6px 0 #171b22;transition:transform .18s ease,box-shadow .18s ease}
+.draw-deck.royal{background:#591f26 url('/assets/cardback_royal.png') center/100% 100% no-repeat}
+.draw-deck.monster{background:#292151 url('/assets/cardback_monster.png') center/100% 100% no-repeat}
+.draw-deck:hover:not(:disabled){transform:translateY(-5px);background-size:100% 100%;box-shadow:3px 7px 0 #171b22,4px 8px 0 #b9a278,0 12px 22px #0006}
+.draw-deck:disabled{opacity:1;filter:saturate(.7)}
+.draw-deck>span{position:absolute;left:-.3rem;right:-.3rem;top:-.7rem;padding:.24rem;background:#20252bf5;border:1px solid #ddc58b88;font:600 .85rem 'Microsoft YaHei',sans-serif;color:#f4e5c6;border-radius:3px}
+.draw-deck>strong{position:absolute;bottom:.5rem;right:.35rem;background:#161d25ef;min-width:1.8rem;padding:.15rem .3rem;border:1px solid #ddc58b80;border-radius:3px;font-size:1.1rem;line-height:1.3;color:#fff0c9}
+.draw-deck>small{position:absolute;bottom:-1.65rem;left:-1rem;right:-1rem;font-size:.7rem;color:#f2e9dc;text-shadow:0 1px 3px #000}
+.draw-deck>span::before{content:'';display:inline-block;width:1.2rem;height:1.2rem;vertical-align:middle;background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:.3rem}
+.draw-deck.royal>span::before{background-image:url('/assets/emblem_royal_sword.png')}
+.draw-deck.monster>span::before{background-image:url('/assets/emblem_monster_spiral.png')}
+.player-block{background:#171f28f5;border-color:#c6c6bf36}.player-block.current{border-color:#efd396;box-shadow:inset 3px 0 #efd396}
+.board-label,.player-block header small{color:#b9c7cf}.player-block.away{opacity:.78}
+.avatar{background:#395d63;border-color:#adc3c4}.waiting-player:nth-child(even) .avatar{background:#755171}
+.tavern-zone{background:#23292ff5;border-color:#e1c99466;min-width:0;padding:.6rem}
+.tavern-zone h3{color:#f1dcae}.tavern-zone>small,.tavern-zone>span{color:#cad2cd}
+.event-list li{border-left-color:#6d929d}.event-list li span,.chat-message time{color:#adbfc6}
+.chat-message p{background:#b5c6ce0c}.chat-message.mine p{background:#4c858729}
+dialog,.response-box{background:#20272d;border-color:#d7c19a88}
+.profile-banner{background:#252c33;border-bottom-color:#d6c2a747}.profile-stats small{color:#bdc9cd}
+.toast,.floating-event{background:#222b31;border-color:#e3c58b}.response-overlay{background:#11171dc4}
+.shelf-row:focus-visible,button:focus-visible{outline:2px solid #f1d49a;outline-offset:3px}
+@media(max-width:950px){.auth-screen{padding:2rem;gap:1.5rem}.auth-visual>span{font-size:1.3rem}.draw-deck{flex-basis:88px;width:88px}.felt{gap:1rem}}
+@media(max-width:720px){.auth-screen{padding:1rem;background-position:center;align-content:center;grid-template-columns:minmax(0,1fr)}.auth-screen form{justify-self:center;width:100%;max-width:390px;padding:1.3rem}.auth-visual{display:none}.auth-screen h1{font-size:2.2rem}#room{background-size:auto 650px}.room-toolbar{padding:.65rem;margin:.8rem}.felt{padding:1.7rem .6rem 2rem;gap:.6rem;min-height:225px}.draw-deck{flex-basis:70px;width:70px}.draw-deck>span{font-size:.75rem}.draw-deck>span::before{width:1rem;height:1rem;margin-right:.1rem}.draw-deck>strong{font-size:.9rem;min-width:1.4rem}.draw-deck>small{font-size:.65rem}.table-center{min-width:100px;padding:.6rem .4rem;max-width:48%}.table-center>strong{font-size:1.1rem}.tavern .game-card{width:43px}.tavern-zone{padding:.5rem .3rem}.account-summary{gap:.6rem}.account-summary button{font-size:.8rem;padding:.5rem}.auth-screen form{max-height:100%;overflow:auto}}
+@media(prefers-reduced-motion:reduce){.draw-deck{transition:none}.draw-deck:hover:not(:disabled){transform:none}}

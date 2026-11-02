@@ -1,0 +1,12 @@
+{
+  "name": "xcs-lan-table",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node host-runner.js",
+    "test": "node --test --test-isolation=none test/*.test.js"
+  },
+  "dependencies": {
+    "ws": "8.22.1"
+  }
+}

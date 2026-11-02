@@ -1,0 +1,116 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700;800&display=swap');
+
+:root{font-family:"DM Sans","Microsoft YaHei",sans-serif;color:#eee9dd;background:#172120;font-synthesis:none;text-rendering:optimizeLegibility;--ink:#eee9dd;--muted:#9a9f91;--line:rgba(232,222,192,.14);--gold:#d9ae62;--red:#c36f54;--green:#739476;--panel:#202c29;--felt:#365344}
+*{box-sizing:border-box}
+body{margin:0;min-width:340px;min-height:100vh;background:radial-gradient(ellipse at 48% 10%,#293a33 0,transparent 60%),#172120}
+button,input,select{font:inherit}
+button{color:inherit;cursor:pointer}
+.hidden{display:none!important}
+.lobby{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:clamp(24px,7vh,72px) 20px 20px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand-mark{width:45px;height:45px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-family:"Noto Serif SC",serif;font-size:23px}
+.brand h1{margin:0;font:600 22px "Noto Serif SC",serif;letter-spacing:0}
+.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}
+.lobby-panel{width:min(100%,510px);margin:auto 0;background:#202c29;border:1px solid var(--line);padding:34px 38px 27px}
+.lobby-heading{margin-bottom:30px}
+.eyebrow{font-size:10px;letter-spacing:1.4px;color:var(--gold);text-transform:uppercase}
+.lobby-heading h2{font:600 27px "Noto Serif SC",serif;margin:10px 0}
+.lobby-heading p,.connection-note{font-size:13px;color:var(--muted);margin:0}
+.field-label{display:block;font-size:12px;color:#c9c7b8;margin:0 0 8px}
+input,select{height:43px;border:1px solid var(--line);background:#172120;color:var(--ink);padding:0 12px;outline:none;border-radius:0}
+input:focus,select:focus{border-color:var(--gold)}
+#player-name{width:100%;margin-bottom:23px}
+.lobby-actions{display:grid;gap:12px}
+.create-row,.join-row{display:flex;align-items:center;gap:10px}
+.create-row .field-label{margin:0}
+.create-row select{width:68px}
+.create-row .primary{margin-left:auto}
+.join-row input{flex:1;text-transform:uppercase}
+.button{height:42px;padding:0 17px;border:1px solid var(--line);background:transparent;font-size:13px;font-weight:600;transition:background .15s,border-color .15s}
+.button:hover{border-color:var(--gold)}
+.button.primary{background:var(--gold);border-color:var(--gold);color:#20251f}
+.button.primary:hover{background:#e6bd73}
+.button.quiet{color:#ddd8ca}
+.button.small{height:32px;padding:0 12px}
+.connection-note{margin-top:23px;font-size:11px}
+.lobby footer{font-size:11px;color:#747d71}
+.table-view{min-height:100vh}
+.topbar{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:#1b2623}
+.brand.compact .brand-mark{width:35px;height:35px;font-size:19px}
+.brand.compact h1{font-size:16px}
+.brand.compact p{font-size:10px}
+.room-chip,.turn-chip{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--muted)}
+.room-chip strong{color:var(--ink);letter-spacing:1.5px}
+.room-chip button,.icon-button{border:0;background:transparent;color:var(--gold);font-size:17px;padding:5px}
+.status-dot{width:7px;height:7px;background:#7fa578;border-radius:50%}
+.turn-chip{gap:10px}
+.turn-chip strong{color:var(--gold)}
+.turn-chip b{font-weight:500;color:#d6d2c6}
+.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;min-height:calc(100vh - 70px)}
+.board-area{padding:24px 30px 30px;min-width:0}
+.table-meta{height:34px;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:12px}
+.opponents{min-height:142px;display:flex;justify-content:center;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.player-seat{border:1px solid var(--line);background:rgba(20,30,27,.55);min-width:132px;padding:11px 13px}
+.player-seat.active{border-color:rgba(217,174,98,.7)}
+.seat-line{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.seat-name{font-size:13px;font-weight:600}
+.seat-coins{color:var(--gold);font-size:12px;white-space:nowrap}
+.seat-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;margin-top:8px}
+.board-cards{display:flex;gap:5px;margin-top:9px;min-height:22px}
+.board-cards img{height:42px;width:29px;object-fit:cover;border:1px solid rgba(255,255,255,.2)}
+.center-table{min-height:215px;margin:4px 0 20px;padding:19px 7%;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;justify-items:center;background:radial-gradient(ellipse at center,#456b55 0,#365344 48%,#2a4236 100%);border:8px solid #27382e;outline:1px solid rgba(215,183,119,.25);box-shadow:0 12px 28px #0d1713}
+.deck{display:grid;grid-template-columns:auto 57px 32px;align-items:center;gap:8px}
+.deck-title{grid-column:1/-1;color:#ddd7c6;font-family:"Noto Serif SC",serif;font-size:12px}
+.deck-pile{height:78px;width:57px;border:1px solid #cdb879;background:repeating-linear-gradient(135deg,#4b3330,#4b3330 5px,#6a4940 5px,#6a4940 6px);padding:4px}
+.deck-pile span{height:100%;display:grid;place-items:center;border:1px solid rgba(228,204,143,.65);font:600 23px "Noto Serif SC",serif;color:#e0c68c}
+.monster-deck .deck-pile{background:repeating-linear-gradient(135deg,#392c48,#392c48 5px,#594164 5px,#594164 6px)}
+.deck>strong{font-size:12px;color:#fff}
+.discard-pile{grid-column:1/-1;display:flex;justify-content:space-between;color:#b7bfad;font-size:10px}
+.table-emblem{display:flex;flex-direction:column;align-items:center;color:#e5d5ac}
+.table-emblem .crest{font-size:26px;color:#d5b36d}
+.table-emblem strong{font:600 16px "Noto Serif SC",serif}
+.table-emblem small{margin-top:5px;font-size:9px;color:#c0c4b5}
+.my-seat{display:flex;justify-content:center;min-height:75px}
+.my-seat .player-seat{width:min(100%,280px)}
+.hand-section{border-top:1px solid var(--line);padding-top:17px;margin-top:8px}
+.hand-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}
+.hand-heading>div{display:flex;align-items:baseline;gap:10px}
+.hand-heading strong{font-size:13px}
+.hand-heading>span{color:var(--muted);font-size:11px}
+.hand-cards{display:flex;align-items:flex-start;gap:12px;overflow-x:auto;padding:3px 2px 12px;min-height:186px}
+.hand-card{flex:0 0 114px;border:0;background:none;padding:0;text-align:left;color:var(--ink)}
+.hand-card img{display:block;width:114px;aspect-ratio:5/7;object-fit:cover;border:1px solid rgba(221,199,145,.45);transition:transform .15s,border-color .15s}
+.hand-card:hover img{transform:translateY(-4px);border-color:var(--gold)}
+.hand-card span{display:block;font-size:10px;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.side-panel{border-left:1px solid var(--line);padding:23px 19px;display:flex;flex-direction:column;background:rgba(27,38,35,.78);min-height:calc(100vh - 70px)}
+.side-head{display:flex;align-items:center;justify-content:space-between}
+.side-head h2{margin:5px 0 0;font:600 17px "Noto Serif SC",serif}
+.players-list{display:grid;gap:7px;margin:19px 0 25px}
+.player-row{display:grid;grid-template-columns:1fr auto;gap:3px 8px;padding:9px 10px;border-left:2px solid transparent;background:rgba(255,255,255,.025)}
+.player-row.active{border-color:var(--gold);background:rgba(217,174,98,.07)}
+.player-row strong{font-size:12px}
+.player-row span{font-size:10px;color:var(--muted)}
+.player-row .coin-tools{grid-row:span 2;display:flex;align-items:center;gap:6px}
+.coin-tools button{width:23px;height:23px;border:1px solid var(--line);background:none;color:var(--gold)}
+.history-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:9px;border-bottom:1px solid var(--line);font-size:12px}
+.history-head span{font-size:10px;color:#7fa578}
+.history-list{list-style:none;padding:0;margin:10px 0;overflow-y:auto;max-height:36vh}
+.history-list li{font-size:11px;color:#b4b7a9;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.045);line-height:1.5}
+.side-footer{margin-top:auto;padding-top:13px}
+.end-turn{width:100%}
+.toast{position:fixed;left:50%;bottom:25px;transform:translateX(-50%);padding:11px 16px;background:#27352f;border:1px solid var(--gold);font-size:13px;z-index:5}
+dialog{position:fixed;inset:0;border:1px solid var(--line);padding:25px;background:#202c29;color:var(--ink);width:min(92vw,500px);max-height:90vh}
+dialog::backdrop{background:rgba(8,14,11,.78)}
+.dialog-close{position:absolute;right:10px;top:8px;background:none;border:0;color:var(--ink);font-size:24px}
+.card-detail{display:grid;grid-template-columns:minmax(130px,190px) 1fr;gap:20px;align-items:start;padding-top:10px}
+.card-detail img{width:100%;height:auto;border:1px solid var(--gold)}
+.card-detail h2{margin:5px 0 12px;font:600 20px "Noto Serif SC",serif}
+.card-detail .faction-tag{display:inline-block;color:var(--gold);font-size:10px;margin-bottom:9px}
+.card-detail p{font-size:13px;line-height:1.8;color:#d4d2c6}
+.card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+@media(max-width:900px){.game-layout{grid-template-columns:minmax(0,1fr) 245px}.board-area{padding:20px 18px}.side-panel{padding:20px 14px}.center-table{padding-left:4%;padding-right:4%}}
+@media(max-width:680px){.topbar{height:62px;padding:0 14px}.brand.compact .brand-mark{width:31px;height:31px}.brand.compact h1{font-size:14px}.brand.compact p{display:none}.room-chip{gap:5px;font-size:10px}.turn-chip{gap:5px;font-size:10px}.game-layout{display:flex;flex-direction:column}.board-area{padding:14px 13px}.opponents{min-height:105px;gap:7px}.player-seat{min-width:110px;padding:9px}.center-table{min-height:173px;margin:0 0 15px;border-width:5px;padding:13px 3%;grid-template-columns:1fr 1fr 1fr}.deck{grid-template-columns:auto 46px;gap:5px}.deck-pile{height:65px;width:46px}.discard-pile{display:none}.table-emblem small{display:none}.table-emblem strong{font-size:13px}.hand-cards{min-height:171px;gap:9px}.hand-card,.hand-card img{width:100px;flex-basis:100px}.side-panel{min-height:310px;border-left:0;border-top:1px solid var(--line);padding:16px}.players-list{grid-template-columns:1fr 1fr;margin:12px 0 18px}.history-list{max-height:190px}.side-footer{margin-top:10px}.lobby{padding:25px 16px 17px}.lobby-panel{padding:26px 21px}.lobby-heading h2{font-size:24px}}
+@media(max-width:390px){.room-chip>span:not(.status-dot){display:none}.turn-chip>span{display:none}.center-table{min-height:155px}.deck-title{font-size:10px}.table-emblem strong{font-size:11px}.card-detail{grid-template-columns:112px 1fr;gap:13px}.card-detail h2{font-size:17px}}

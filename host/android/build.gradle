@@ -1,0 +1,4 @@
+// Copyright (C) 2026 jozzhu
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+plugins { id 'com.android.application' version '8.7.3' apply false }

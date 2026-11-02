@@ -1,0 +1,298 @@
+[
+  {
+    "id": 1,
+    "name": "国王（王族纹章）",
+    "badge": "王族纹章",
+    "effect": "∞持续 横置，将弃牌区 1 张 Lv.4 的「勇者」加入手牌。",
+    "image": "/cards/card-01.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 2,
+    "name": "金勇者（王族纹章）",
+    "badge": "王族纹章",
+    "effect": "△攻击 指定 1 个对手的 1 张非黄色手牌放置于其场上，若那张牌带有 Lv 或首领纹章，你 + 1 金币。",
+    "image": "/cards/card-02.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 3,
+    "name": "公主（王族纹章）",
+    "badge": "王族纹章",
+    "effect": "∞持续 打出本牌不需消耗行动点，在你的准备阶段，你 + 1 金币。",
+    "image": "/cards/card-03.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 4,
+    "name": "大臣（王族纹章）",
+    "badge": "王族纹章",
+    "effect": "∞持续 当你被△卡牌指定为目标时，横置本牌，待△卡牌结算后，你抽 1 张牌。",
+    "image": "/cards/card-04.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 5,
+    "name": "圣杯（王族纹章）",
+    "badge": "王族纹章",
+    "effect": "∞持续 当你的准备阶段时，若仅需 1 金币获胜，则直接获胜。",
+    "image": "/cards/card-05.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 6,
+    "name": "勇者（Lv.4）",
+    "badge": "Lv.4",
+    "effect": "△攻击 指定 1 名对手的 1 张非黄色手牌放置于其场上，若本牌 Lv 更高，你 + 1 金币。",
+    "image": "/cards/card-06.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 7,
+    "name": "圣骑士（Lv.3）",
+    "badge": "Lv.3",
+    "effect": "⚡触发 当你被△卡牌指定时，你抽 2 张牌；或者，令对手将那张△卡牌收回手牌，你抽 1 张牌。",
+    "image": "/cards/card-07.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 8,
+    "name": "舞娘（Lv.2）",
+    "badge": "Lv.2",
+    "effect": "打出后放置在你的场上。若本牌在你的场上对手获得金币后，你可以丢弃此牌，并 + 1 金币。",
+    "image": "/cards/card-08.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 9,
+    "name": "格斗家（Lv.0）",
+    "badge": "Lv.0",
+    "effect": "将你的全部手牌放置于场上，若因此效果放置的牌 Lv 之和是偶数，且不存在纹章，则你 + 1 金币。",
+    "image": "/cards/card-09.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 10,
+    "name": "圣剑（王族纹章）",
+    "badge": "王族纹章",
+    "effect": "∞持续 横置，下 1 张「勇者」打出时，改为指定对手场上的 1 张牌为目标并丢弃。若「勇者」Lv 更高，你 + 1 金币。",
+    "image": "/cards/card-10.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 11,
+    "name": "银勇者（Lv.5）",
+    "badge": "Lv.5",
+    "effect": "△攻击 指定 1 名对手的 1 张非黄色手牌放置于其场上，若本牌 Lv 更高，你 + 1 金币。",
+    "image": "/cards/card-11.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 12,
+    "name": "狂战士（Lv.4）",
+    "badge": "Lv.4",
+    "effect": "△攻击 指定 1 名对手的全部非黄色手牌放置于其场上，若均带有 Lv，你 + 1 金币。",
+    "image": "/cards/card-12.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 13,
+    "name": "卫兵（Lv.3）",
+    "badge": "Lv.3",
+    "effect": "⚡触发 当你被△卡牌指定时，令那张卡牌无效，并将其放置在他的场上，之后你抽 1 张牌。",
+    "image": "/cards/card-13.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 14,
+    "name": "送子鹤（Lv.2）",
+    "badge": "Lv.2",
+    "effect": "⚡触发 当你的准备阶段时，若有 2 张及以上的其它卡牌回到手牌，你 + 1 金币。",
+    "image": "/cards/card-14.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 15,
+    "name": "商人（Lv.1）",
+    "badge": "Lv.1",
+    "effect": "△攻击 将你场上的 1 张牌加入对手的手牌，那名对手向你支付 1 金币。",
+    "image": "/cards/card-15.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 16,
+    "name": "修女（Lv.1）",
+    "badge": "Lv.1",
+    "effect": "⚡触发 对手有 Lv.1 以外的卡牌进入弃牌区时，将要丢弃的卡牌加入你的手牌。",
+    "image": "/cards/card-16.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 17,
+    "name": "法师（Lv.2）",
+    "badge": "Lv.2",
+    "effect": "△攻击 向 1 名有手牌的对手宣言 1/2/3/4 中 1 个数，他必须放置此等级的牌到其场上，否则你 + 1 金币。",
+    "image": "/cards/card-17.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 18,
+    "name": "铁匠（Lv.0）",
+    "badge": "Lv.0",
+    "effect": "将 2 张手牌放置于你的场上，若因此放置的牌 Lv 或纹章相同，你 + 1 金币。",
+    "image": "/cards/card-18.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 19,
+    "name": "僧侣（Lv.1）",
+    "badge": "Lv.1",
+    "effect": "从黄色弃牌区选 1 张 Lv.1 以外的牌不消耗行动点打出，或将其加入手牌。",
+    "image": "/cards/card-19.jpg",
+    "faction": "royal"
+  },
+  {
+    "id": 20,
+    "name": "史莱姆（Lv.0）",
+    "badge": "Lv.0",
+    "effect": "将弃牌区的 1 张 Lv.1 牌或者 Lv.2 牌加入你的手牌。",
+    "image": "/cards/card-20.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 21,
+    "name": "炸弹怪（Lv.1）",
+    "badge": "Lv.1",
+    "effect": "∞持续 打出时放置在对手场上。当前持有者的准备阶段开始前，由其将自己场上 1 张其它牌返回自己的手牌。当其手牌≥5 张时丢弃此牌。",
+    "image": "/cards/card-21.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 22,
+    "name": "蝙蝠（Lv.1）",
+    "badge": "Lv.1",
+    "effect": "△攻击 秘密查看 1 名对手的全部手牌，之后令他场上的牌全部回到手牌。",
+    "image": "/cards/card-22.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 23,
+    "name": "白骨（Lv.2）",
+    "badge": "Lv.2",
+    "effect": "从紫色弃牌区选择 1 张牌，放置到你的场上。",
+    "image": "/cards/card-23.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 24,
+    "name": "狼人（Lv.2）",
+    "badge": "Lv.2",
+    "effect": "从紫色弃牌区选择 1 张带有 Lv 的牌放置到场上；或者，从任意弃牌区选 1 张带有纹章的牌加入手牌。",
+    "image": "/cards/card-24.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 25,
+    "name": "小丑女（Lv.3）",
+    "badge": "Lv.3",
+    "effect": "△攻击 指定 1 名对手，向他宣告 1 张牌的名称，若对手的手牌拥有该牌，将其丢弃；若带有 Lv，你 + 1 金币。",
+    "image": "/cards/card-25.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 26,
+    "name": "女巫（Lv.3）",
+    "badge": "Lv.3",
+    "effect": "△攻击 指定 1 名对手，向他宣告 1 张牌的名称，若他的手牌或场上拥有该牌，必须将 1 张交付到你的手牌。",
+    "image": "/cards/card-26.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 27,
+    "name": "哥布林（Lv.4）",
+    "badge": "Lv.4",
+    "effect": "△攻击 指定 1 名金币多于你的对手，向你交付 1 金币。",
+    "image": "/cards/card-27.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 28,
+    "name": "牛头人（Lv.4）",
+    "badge": "Lv.4",
+    "effect": "△攻击 指定 1 名对手场上所有带纹章的卡牌，由他决定交付那些卡牌到你手牌，或向你支付 1 金币。",
+    "image": "/cards/card-28.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 29,
+    "name": "宝箱怪（首领纹章）",
+    "badge": "首领纹章",
+    "effect": "⚡触发 当对手获得金币后，你抽 2 张牌。或者，当对手 2 行动点均抽牌后，你 + 1 金币。",
+    "image": "/cards/card-29.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 30,
+    "name": "魔剑（首领纹章）",
+    "badge": "首领纹章",
+    "effect": "∞持续 横置，本回合你打出的下 1 张「勇者」可指定任意颜色的手牌，且该「勇者」打出后放置于你的场上，无需丢弃。",
+    "image": "/cards/card-30.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 31,
+    "name": "妖精（首领纹章）",
+    "badge": "首领纹章",
+    "effect": "∞持续 横置，将你场上的 1 张牌加入你自己的手牌。",
+    "image": "/cards/card-31.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 32,
+    "name": "龙幼崽（炎族纹章）",
+    "badge": "炎族纹章",
+    "effect": "△攻击 选择每个场上有牌的对手，令他们场上的 1 张牌返回手牌。若那些牌均带有 Lv，你 + 1 金币。",
+    "image": "/cards/card-32.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 33,
+    "name": "黑骑士（首领纹章、王族纹章）",
+    "badge": "首领纹章、王族纹章",
+    "effect": "△攻击 放置 1 张对手手牌于其场上，若带有 Lv，你 + 1 金币；若带有纹章，则从任意处将「魔剑」加入手牌。",
+    "image": "/cards/card-33.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 34,
+    "name": "魔王（首领纹章）",
+    "badge": "首领纹章",
+    "effect": "∞持续 当你打出 1 张带有 Lv 的紫色牌后，横置本牌，你 + 1 金币。",
+    "image": "/cards/card-34.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 35,
+    "name": "龙炎（炎族纹章）",
+    "badge": "炎族纹章",
+    "effect": "△攻击 丢弃 1 名对手场上的 1 张牌。若那张牌带有 Lv，你 + 1 金币。",
+    "image": "/cards/card-35.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 36,
+    "name": "火龙（首领纹章、炎族纹章）",
+    "badge": "首领纹章、炎族纹章",
+    "effect": "∞持续 横置，将弃牌区的 1 张带有炎族纹章的牌不消耗行动点打出，或将其加入手牌。",
+    "image": "/cards/card-36.jpg",
+    "faction": "monster"
+  },
+  {
+    "id": 37,
+    "name": "龙蛋（炎族纹章）",
+    "badge": "炎族纹章",
+    "effect": "从紫色牌库或弃牌区选 1 张带有炎族纹章的牌加入手牌。",
+    "image": "/cards/card-37.jpg",
+    "faction": "monster"
+  }
+]

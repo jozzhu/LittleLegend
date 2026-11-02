@@ -1,0 +1,5 @@
+<!-- Copyright (C) 2026 jozzhu -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小传说 · 本机管理</title><link rel="stylesheet" href="/studio.css"><link rel="stylesheet" href="/chronicle.css"><link rel="stylesheet" href="/i18n.css"><script src="/input-preferences.js" defer></script><script src="/languages.js" defer></script><script src="/guide-translations.js" defer></script><script src="/i18n.js" defer></script></head><body><main style="max-width:1000px;margin:3rem auto;padding:1rem"><a href="/" style="color:#e1bd75">返回小传说</a><h1>服务器本机 · 用户管理</h1><p class="muted">使用服务器 data/admin.key 中的密钥。密钥只保存在当前页面内存，不会写入浏览器存储。原密码不可还原；核实身份后可重置，临时密码默认遮挡、可点击查看。</p><form id="admin-login" class="row"><input id="admin-key" type="password" autocomplete="off" placeholder="本机管理密钥" required><button>解锁后台</button></form><p id="admin-message" role="status"></p><div id="admin-users"></div></main><script src="/admin.js"></script></body></html>

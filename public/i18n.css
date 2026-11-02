@@ -1,0 +1,15 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+.language-select{font:13px "Segoe UI","Yu Gothic UI",sans-serif;height:32px;min-height:32px;width:88px;max-width:100%;padding:0 5px;border:1px solid #686556;border-radius:4px;background:#20292a;color:#eee8da;flex-shrink:0;letter-spacing:0}
+#auth-screen .topbar .language-select{position:relative;z-index:2}
+html[lang=en] .appbar .bar-actions{gap:7px}
+html[lang=en] .appbar .reference-launch{font-size:12px;padding:0 6px}
+html[lang=en] .appbar .wordmark span,html[lang=ja] .appbar .wordmark span{display:none}
+html[lang=en] .player-block small,html[lang=ja] .player-block small{white-space:normal;overflow-wrap:anywhere}
+html[lang=en] button,html[lang=ja] button{overflow-wrap:anywhere}
+.shelf-row[aria-busy=true],.replay-item[aria-busy=true]{cursor:wait;opacity:.7}
+@media(max-width:800px){.appbar .language-select{width:72px;font-size:12px}.appbar .font-control input{width:50px}.appbar .bar-actions{gap:4px}html[lang=en] .appbar .bar-actions{gap:4px}}
+@media(max-width:1050px){html[lang=en] .appbar .audio-button-label,html[lang=ja] .appbar .audio-button-label{display:none}}
+@media(max-width:520px){.appbar .language-select{width:62px;font-size:11px}.appbar .wordmark{font-size:16px;max-width:68px;white-space:normal;line-height:1.05}.appbar .font-control input{width:28px}.appbar .font-control output{display:none}html[lang=en] .appbar .reference-launch{font-size:0;padding:0}}
+@media(max-width:380px){.appbar{padding:0 5px;gap:3px}.appbar .bar-actions,html[lang=en] .appbar .bar-actions{gap:2px}.appbar .font-control input{width:20px}.appbar .wordmark{max-width:53px;font-size:14px}.appbar .language-select{width:55px}}

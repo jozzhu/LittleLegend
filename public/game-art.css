@@ -1,0 +1,17 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+.coin-icon,.state-icon,.achievement-icon{display:inline-block;object-fit:contain;vertical-align:middle;flex:none}
+.coin-icon{width:1.5rem;height:1.5rem}.state-icon{width:1.2rem;height:1.2rem;margin-right:.25rem}.achievement-icon{width:1.5rem;height:1.5rem;margin-right:.3rem}
+.title-badge{display:inline-flex;align-items:center;white-space:normal;line-height:1.35;vertical-align:middle}
+#actions-label{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}.action-gems{display:flex;gap:.1rem;height:1.8rem}.action-gems img{width:1.8rem;height:1.8rem;object-fit:contain}
+.dice-face .dice-art{display:block;width:2.5rem;height:2.5rem;object-fit:contain}.result-icon{width:2.6rem;height:2.6rem;object-fit:contain;flex:none}
+.profile-banner[data-faction]{background:#252c33 url('/assets/ui/banners/banner_neutral.png') center/cover no-repeat;min-height:160px;padding:1.25rem;text-shadow:0 2px 4px #000}
+.profile-banner[data-faction=royal]{background-image:url('/assets/ui/banners/banner_royal.png')}.profile-banner[data-faction=monster]{background-image:url('/assets/ui/banners/banner_monster.png')}
+.profile-banner h2{overflow-wrap:anywhere}.profile-banner .title-badge{background:#192024e8}
+/* All motion and bitmap frame overlays are disabled until redesigned. */
+*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+#effect-layer,.floating-event,.art-effect{display:none!important}
+.avatar::after,.card-art-preview::after{content:none!important;display:none!important}
+.draw-deck:hover:not(:disabled),.game-card:hover{transform:none!important}
+@media(max-width:720px){.result-icon{width:2rem;height:2rem}.profile-banner[data-faction]{min-height:130px;padding:1rem}}

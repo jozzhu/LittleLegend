@@ -1,0 +1,21 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+/* Phones retain a landscape table, with natural scrolling for larger games. */
+#landscape-hint{display:none}
+@media(pointer:coarse) and (orientation:portrait) and (max-width:900px){
+ #landscape-hint{display:block;background:#252c33;color:#f4e7c8;border-bottom:1px solid #e5c58266;padding:.6rem 1rem;font-size:.85rem;text-align:center}
+}
+@media(pointer:coarse) and (orientation:landscape) and (max-height:600px){
+ .appbar{min-height:48px;height:auto;padding:.4rem .8rem}.wordmark{font-size:1.1rem}.wordmark span{display:none}.bar-actions{gap:.4rem}
+ #room{min-height:calc(100dvh - 48px)}.room-toolbar{margin:.4rem .6rem;padding:.4rem .6rem;gap:.5rem;flex-wrap:wrap}.room-toolbar h1{font-size:1rem}.room-toolbar button{padding:.35rem .6rem}
+ .workspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,24%);gap:8px;padding:0 .6rem 1rem}
+ .main-column{grid-column:1;grid-row:1;min-width:0;width:auto}.side-column{grid-column:2;grid-row:1;position:sticky;top:.5rem;width:auto}.log-column{grid-column:1/-1;grid-row:2;position:static;width:auto}
+ #history-module,#chat-module{padding:.5rem;max-height:calc(100dvh - 1rem)}.side-column .chat-list{height:220px;min-height:90px}.log-column .event-list{height:150px}
+ #table-panel{padding:.6rem;gap:.5rem}#table-panel>.module-head h2{font-size:1rem}#opponents{grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem}#opponents[data-count="1"]{grid-template-columns:minmax(0,1fr)}
+ .player-block{padding:.5rem}.player-block header{flex-wrap:wrap}.player-block header strong{font-size:.85rem}.board-card-row .game-card{width:48px}
+ .felt{min-height:150px;padding:1rem .5rem 1.5rem;gap:.5rem}.draw-deck{width:65px;flex-basis:65px}.table-center{min-width:100px;padding:.4rem}.tavern .game-card{width:36px}
+ .hand-cards .game-card{width:74px}.hand-cards{gap:.5rem}.action-strip{flex-wrap:wrap}.action-strip button{margin-left:auto}
+ .auth-screen{inset:48px 0 0;display:flex;justify-content:center;padding:1rem;overflow:auto}.auth-visual{display:none}.auth-screen form{max-height:none;margin:auto;max-width:420px;padding:1rem}.auth-screen h1{font-size:1.6rem}
+ dialog{max-height:92dvh;overflow:auto}.response-overlay{padding:.6rem}.response-box{max-height:92dvh;overflow:auto}
+}

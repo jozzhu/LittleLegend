@@ -1,0 +1,32 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+.reference-window{position:fixed;inset:auto;margin:0;padding:0;width:760px;height:560px;max-width:calc(100vw - 16px);max-height:calc(100dvh - 16px);min-width:280px;min-height:220px;border:1px solid #897244;border-radius:6px;background:#172022;color:#eee9df;box-shadow:0 18px 70px #0009;z-index:2147483000;overflow:hidden;font-size:1rem;display:flex;flex-direction:column}
+.reference-window::backdrop{background:transparent;pointer-events:none}
+.reference-head{display:flex;align-items:center;gap:10px;flex:none;padding:8px 12px;border-bottom:1px solid #46504e;background:#202b2d;cursor:move;touch-action:none;user-select:none}
+.reference-head h2{margin:0;font-size:1.05rem;flex:1;color:#e8cc91}
+.reference-head button{width:34px;height:32px;padding:0;flex:none;font-size:20px;border-radius:4px}
+.reference-head button[aria-pressed=true]{background:#dbc081;color:#172022}
+.reference-tools{display:flex;flex-wrap:wrap;gap:8px;padding:10px 12px;border-bottom:1px solid #354243;flex:none}
+.reference-tools input{flex:1 1 180px;min-width:100px}
+.reference-tools select{flex:1 1 100px;min-width:0}
+.reference-content{overflow:auto;overscroll-behavior:contain;min-height:0;flex:1;padding:14px 16px;line-height:1.65}
+.reference-content h3{font-size:1.05rem;color:#e8cc91;margin:16px 0 6px}
+.reference-content h3:first-child{margin-top:0}
+.reference-content p{margin:6px 0 12px}
+.reference-count{padding:5px 12px;color:#afbfbb;font-size:.8rem;flex:none}
+.reference-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:14px;align-items:start}
+.reference-card{padding:0;border:1px solid #475350;border-radius:4px;background:#202b2d;overflow:hidden;color:#eee9df;min-width:0}
+.reference-card img{width:100%;aspect-ratio:300/420;object-fit:contain;display:block;background:#141b1d}
+.reference-card span{display:block;padding:7px 5px;font-size:.9rem;white-space:normal;overflow-wrap:anywhere}
+.reference-card.royal span{color:#f0cf83}.reference-card.monster span{color:#c2b4ee}
+.reference-detail{display:grid;grid-template-columns:minmax(120px,210px) minmax(0,1fr);gap:18px}
+.reference-detail img{width:100%;height:auto}.reference-detail h3{margin-top:0}
+.reference-resize{position:absolute;right:0;bottom:0;width:22px;height:22px;cursor:nwse-resize;touch-action:none;border:0;border-radius:0;padding:0;background:linear-gradient(135deg,transparent 45%,#b59b62 46%,#b59b62 52%,transparent 53%,transparent 63%,#b59b62 64%,#b59b62 70%,transparent 71%)}
+.reference-launch{height:32px;min-width:34px;padding:0 8px;white-space:nowrap;font-size:.85rem}
+.reference-tabs{display:flex;flex:none;gap:4px;padding:8px 12px 0;border-bottom:1px solid #46504e}
+.reference-tabs button{background:transparent;border:0;border-bottom:2px solid transparent;border-radius:0;padding:8px 16px;font-size:.9rem;color:#b9c6c1}
+.reference-tabs button[aria-selected=true]{color:#f0d59e;border-bottom-color:#d7bb7f}
+.reference-tabs button:focus-visible{outline:2px solid #d7bb7f;outline-offset:-3px}
+@media(max-width:800px){.appbar .wordmark span{display:none}.bar-actions{gap:6px}.reference-launch{padding:0 5px}.reference-window{min-width:260px}.reference-detail{grid-template-columns:minmax(100px,35%) minmax(0,1fr)}}
+@media(max-width:520px){.appbar .wordmark{font-size:20px}.appbar .font-control{font-size:12px;gap:4px}.font-control input{width:55px}.appbar{padding-left:8px;padding-right:8px}.appbar button.icon{width:32px;min-width:32px;padding:0;font-size:22px}.reference-launch{font-size:12px}.reference-tools{gap:5px;padding:6px}.reference-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}}

@@ -1,0 +1,28 @@
+<!-- Copyright (C) 2026 jozzhu -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#151c1f"><title>小传说 · 观战</title><link rel="stylesheet" href="/gz.css"><script src="/input-preferences.js" defer></script></head>
+<body>
+<link rel="stylesheet" href="/i18n.css"><script src="/languages.js" defer></script><script src="/guide-translations.js" defer></script><script src="/i18n.js" defer></script>
+<header class="gm-header"><a class="brand" href="/gz.html">小传说 <span>观战</span></a><div class="header-actions"><span id="gm-connection" role="status">正在连接</span><button id="gm-refresh" title="刷新" aria-label="刷新">↻</button></div></header>
+<main>
+ <form id="gm-unlock" hidden><h1>本机观战</h1><label>管理密钥<input id="gm-key" type="password" autocomplete="off" required></label><button class="primary" type="submit">解锁观战</button></form>
+ <p id="gm-message" role="status"></p>
+ <section id="gm-overview" hidden>
+  <div class="page-heading"><div><span class="eyebrow">HOST CONSOLE</span><h1>服务器牌桌</h1></div><span class="local-only">服务器本机</span></div>
+  <div class="gm-metrics"><div><span>在线玩家</span><strong id="gm-online">0</strong></div><div><span>现存房间</span><strong id="gm-rooms">0</strong></div><div><span>进行中对局</span><strong id="gm-playing">0</strong></div></div>
+  <div class="room-table-wrap"><table><thead><tr><th>房间</th><th>状态</th><th>房主</th><th>在场</th><th></th></tr></thead><tbody id="gm-room-list"></tbody></table></div><p id="gm-empty" hidden>暂时没有房间</p>
+ </section>
+ <section id="gm-watch" hidden>
+  <div class="watch-heading"><button id="gm-back" title="返回对局列表">← 牌桌列表</button><h1 id="gm-room-title"></h1><span class="live-badge">全知观战</span></div>
+  <div class="watch-status"><strong id="gm-turn"></strong><span id="gm-phase"></span><span id="gm-actions"></span></div>
+  <p id="gm-pending" hidden></p>
+  <div class="watch-layout"><div class="table-content"><div id="gm-players" class="gm-players"></div><section class="piles"><h2>公共区域与牌库</h2><div id="gm-piles"></div></section></div>
+   <aside><section class="chronicle"><h2>对局记录</h2><ol id="gm-events"></ol></section><section class="chat"><h2>桌边聊天</h2><ol id="gm-chat"></ol></section></aside>
+  </div>
+ </section>
+</main>
+<dialog id="gm-card-dialog"><div class="dialog-heading"><h2 id="gm-card-title"></h2><button id="gm-card-close" title="关闭" aria-label="关闭">×</button></div><div id="gm-card-detail"></div></dialog>
+<link rel="stylesheet" href="/audio.css"><script src="/avatar-characters.js"></script><script src="/avatars.js"></script><script src="/resource-cache.js" defer></script><script src="/audio-mixer.js"></script><script src="/audio.js"></script><script src="/gz.js"></script>
+</body></html>

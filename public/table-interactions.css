@@ -1,0 +1,43 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+/* Keep bitmap frame overlays disabled; feedback animates the actual controls. */
+button.draw-deck.royal,button.draw-deck.royal:hover,button.draw-deck.royal:focus,button.draw-deck.royal:active{background-image:url('/assets/cardback_royal.png');background-size:100% 100%;background-repeat:no-repeat}
+button.draw-deck.monster,button.draw-deck.monster:hover,button.draw-deck.monster:focus,button.draw-deck.monster:active{background-image:url('/assets/cardback_monster.png');background-size:100% 100%;background-repeat:no-repeat}
+.game-card img{aspect-ratio:1746/2401;object-fit:contain;background:#172128}
+.board-card-row{overflow-x:auto;flex-wrap:nowrap;min-height:68px;padding-bottom:4px}
+.board-card-row .game-card{flex:0 0 54px;width:54px}
+.board-card-row .game-card img{width:100%;height:auto;max-height:none}
+.opponent-hand{display:flex;gap:0;padding:5px 0 2px;overflow-x:auto;min-height:38px}
+.opponent-hand img{width:25px;height:35px;object-fit:fill;border-radius:2px;margin-right:-9px;flex:none;box-shadow:1px 0 2px #0009}
+.opponent-hand img:last-child{margin-right:0}
+.card-reference{font-weight:600;text-decoration:underline dotted;text-underline-offset:3px;cursor:help}
+.card-reference.royal,#card-effect-tooltip .royal{color:#f3d17f}
+.card-reference.monster,#card-effect-tooltip .monster{color:#cfb2ff}
+.event-detail{display:block;color:#aebbc4;line-height:1.7;margin:5px 0 2px}
+.event-list p{line-height:1.75}
+#card-effect-tooltip{position:fixed;z-index:150;max-width:min(340px,calc(100vw - 16px));padding:12px 14px;background:#182328;border:1px solid #b8aa81;border-radius:5px;box-shadow:0 8px 26px #0008;font-size:.85rem;line-height:1.7;pointer-events:none}
+#card-effect-tooltip p{margin:5px 0 0;white-space:pre-wrap}
+#discard-preview{display:flex;justify-content:center;gap:4px;position:relative;min-height:0;isolation:isolate;cursor:pointer}
+#discard-preview .game-card{width:34px;flex:0 0 34px;margin:0}
+#discard-preview .game-card img{width:100%;height:auto}
+#discard-preview .game-card span{display:none}
+#discard-preview.has-stack::before{content:'';position:absolute;inset:4px -3px -3px;border:1px solid #c5b48b;background:#263338;box-shadow:2px 2px 0 #111a20,3px 3px 0 #8b8068;border-radius:3px;z-index:-1}
+.hidden-card-option img{object-fit:contain;max-height:112px}
+.choice-preview-actions{justify-content:flex-end;margin-top:1.25rem}
+.hidden-choice-detail{display:flex;align-items:center;gap:1.25rem}
+.hidden-choice-detail img{width:130px;max-height:38dvh;object-fit:contain}
+#choice-preview-dialog{max-height:90dvh}
+#choice-preview-dialog .dialog-head h2{overflow-wrap:anywhere;min-width:0}
+#choice-preview-dialog .card-detail-grid{align-items:start}
+#choice-preview-dialog .card-detail-grid>img{max-height:50dvh;object-fit:contain}
+.event-declaration,.event-guess{border-left:2px solid #edca79;padding-left:8px}
+.player-reference{font-weight:750;border-bottom:1px solid currentColor;padding:0 2px}
+.player-tone-0{color:#97dec5}.player-tone-1{color:#a8cfff}.player-tone-2{color:#ffbdac}.player-tone-3{color:#e3c78a}.player-tone-4{color:#e7b5d8}
+#toast{position:fixed;inset:auto auto 1.5rem 50%;transform:translateX(-50%);margin:0;max-width:calc(100vw - 2rem);width:max-content;box-sizing:border-box;z-index:10000;pointer-events:none;color:#fff2d8}
+#toast::backdrop{background:transparent;pointer-events:none}
+.settings-section-head{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:1rem;border-bottom:1px solid #cbb68333;padding:.5rem 0}
+.settings-section-head h3{margin:.3rem 0}.role-pair{grid-column:1/-1;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:.8rem}
+.role-pair>.checkbox{padding-bottom:0}.deck-counts small{color:#b6c4c6;font-size:.75rem}.deck-counts input:disabled{opacity:.5}
+[data-deck-total]{font-size:.85rem;color:#cdbd93}
+@media(pointer:coarse) and (orientation:landscape){.board-card-row .game-card{width:43px;flex-basis:43px}.opponent-hand img{width:20px;height:28px}.opponent-hand{min-height:29px}#discard-preview .game-card{width:28px;flex-basis:28px}}

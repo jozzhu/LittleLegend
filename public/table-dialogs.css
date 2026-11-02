@@ -1,0 +1,9 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+#table-dialog-shield{position:fixed;z-index:170;background:#07150e88;backdrop-filter:blur(3px)}
+dialog.table-dialog{position:fixed;inset:auto;margin:0;transform:translate(-50%,-50%);box-sizing:border-box;max-width:800px;z-index:190}
+.response-overlay.table-response{inset:auto;box-sizing:border-box;z-index:160;padding:8px}
+.table-response .response-box{box-sizing:border-box;width:100%;max-width:700px;max-height:100%;padding:1rem}
+dialog.table-dialog#choice-preview-dialog{z-index:200}
+dialog.table-dialog#undo-dialog{z-index:210}

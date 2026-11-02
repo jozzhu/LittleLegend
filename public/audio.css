@@ -1,0 +1,37 @@
+/* Copyright (C) 2026 jozzhu */
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+
+/* Keep the entire appbar independent of the adjustable document font. */
+.appbar{height:67px;min-height:67px;padding:0 24px;font-size:14px;gap:12px;flex-shrink:0;position:relative;z-index:20}
+.appbar .wordmark{font-size:22px;white-space:nowrap;flex-shrink:0}
+.appbar .wordmark span{font-size:10px;margin-left:13px;letter-spacing:0}
+.appbar .bar-actions{gap:12px;min-width:0}
+.appbar .font-control{font-size:14px;gap:8px;flex-shrink:0}
+.appbar .font-control input{width:100px;min-height:16px;height:20px;padding:0}
+.appbar .font-control output{font-size:14px;width:20px;text-align:right;font-variant-numeric:tabular-nums}
+.appbar .reference-launch{height:32px;min-height:32px;font-size:14px;padding:0 8px}
+.appbar button.icon{font-size:22px;width:38px;height:34px;min-height:34px;padding:0}
+.audio-controls{position:relative;display:flex;align-items:center;gap:6px;flex-shrink:0;font:14px 'Segoe UI','Microsoft YaHei',sans-serif;letter-spacing:0}
+.audio-button{height:32px;min-height:32px;padding:0 8px;display:flex;align-items:center;justify-content:center;gap:5px;font:13px 'Segoe UI','Microsoft YaHei',sans-serif;white-space:nowrap;border-radius:4px}
+.audio-button>span:first-child{font-size:20px;line-height:1;width:20px;text-align:center}
+.audio-button[data-muted=true]{color:#929da0}
+.audio-button[data-muted=true]>span:first-child{text-decoration:line-through}
+.audio-button[aria-expanded=true]{border-color:#d8bd7d;background:#d8bd7d18;color:#efd7a6}
+.audio-panel{position:absolute;top:42px;right:0;width:238px;padding:14px;background:#1b2529;border:1px solid #8c7958;border-radius:5px;box-shadow:0 10px 30px #0008;z-index:100;font-size:14px;color:#eee6d5}
+.audio-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.audio-heading strong{font-size:14px}
+.audio-heading label{display:flex;align-items:center;gap:6px;font-size:12px;color:#bdc9c4}
+.audio-heading input[type=checkbox]{width:15px;height:15px;min-height:15px;padding:0;margin:0;accent-color:#ddbb74}
+.audio-volume{display:flex;align-items:center;gap:12px;font-size:13px}
+.audio-volume input[type=range]{width:150px;height:20px;min-height:20px;padding:0;accent-color:#ddbb74}
+.audio-volume output{width:38px;flex-shrink:0;font-size:13px;text-align:right;font-variant-numeric:tabular-nums}
+.audio-panel[hidden]{display:none!important}
+@media(max-width:800px){.appbar{padding:0 12px}.appbar .wordmark span{display:none}.appbar .bar-actions{gap:7px}.appbar .font-control input{width:70px}.audio-button{padding:0 5px}.audio-button-label{display:none}}
+@media(max-width:520px){.appbar{padding:0 8px;gap:6px;height:56px;min-height:56px}.appbar .wordmark{font-size:20px}.appbar .bar-actions{gap:4px}.appbar .font-control{font-size:12px;gap:3px}.appbar .font-control input{width:45px}.appbar .reference-launch{font-size:12px;padding:0 4px}.appbar button.icon{width:28px}.audio-controls{gap:3px}.audio-button{width:28px;padding:0}.audio-panel{right:-100px}}
+@media(max-width:520px){.appbar .reference-launch{font-size:0;width:28px;min-width:28px;padding:0}.appbar #open-rules::before{content:"?";font-size:18px}.appbar #open-atlas::before{content:"▦";font-size:18px}#auth-screen .audio-panel{right:0}}
+@media(pointer:coarse) and (orientation:landscape) and (max-height:600px){.appbar{height:48px;min-height:48px;padding:0 13px}.appbar .wordmark{font-size:18px}.appbar .bar-actions{gap:6px}}
+.appbar .resource-button{width:32px;height:32px;min-height:32px;font-size:22px;padding:0;flex-shrink:0}
+#resources-dialog{width:min(460px,calc(100vw - 24px))}
+#resources-dialog progress{width:100%;height:12px;accent-color:#ddbb74}
+#resources-status{overflow-wrap:anywhere;font-size:14px;line-height:1.6}
+@media(max-width:400px){.appbar .wordmark{font-size:17px}.appbar .font-control input{width:34px}.appbar .bar-actions{gap:3px}.appbar .resource-button{width:25px}}

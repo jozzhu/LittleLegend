@@ -1,0 +1,29 @@
+// Copyright (C) 2026 jozzhu
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+plugins { id 'com.android.application' }
+
+android {
+ namespace 'asia.littlelegend.host'
+ compileSdk 35
+ ndkVersion '27.2.12479018'
+ buildToolsVersion '35.0.0'
+ defaultConfig {
+  applicationId 'asia.littlelegend.host'
+  minSdk 26
+  targetSdk 35
+  versionCode 50
+  versionName '5.0.0'
+  ndk { abiFilters 'arm64-v8a' }
+  externalNativeBuild { cmake { cppFlags '-std=c++17'; arguments '-DANDROID_STL=c++_shared' } }
+ }
+ externalNativeBuild { cmake { path 'src/main/cpp/CMakeLists.txt'; version '3.22.1' } }
+ packaging { jniLibs { useLegacyPackaging = true; pickFirsts += ['**/libnode.so'] } }
+ sourceSets { main { jniLibs.srcDirs = ['src/main/jniLibs'] } }
+}
+
+tasks.register('stageGame', Sync) {
+ from(project.findProperty('legendGameRoot') ?: '../../..') { include 'server.js', 'game.js', 'accounts.js', 'storage.js', 'realtime.js', 'package.json', 'package-lock.json', 'node_modules/ws/**', 'host-runtime.js', 'host-runner.js', 'host-monitor.js', 'public/**' }
+ into('src/main/assets/game')
+}
+preBuild.dependsOn stageGame
